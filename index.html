@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>  
+    <script src="https://kit.fontawesome.com/10d51d33e6.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10/dist/sweetalert2.all.min.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container-fluid">
+
+    <!-- Header -->
+
+        <nav class="row">
+
+            <div class="col-2">
+                <a href="#"><img src="images/logo.png" id="logo"></a>
+            </div>
+
+            <div class="col-3 offset-3 d-flex align-items-center">
+                <h1>SNEAKER SHOP</h1>
+            </div>
+
+            <div class="col-1 offset-3 d-flex align-items-center" id="menu">
+
+                <!-- Cart offcanvas -->
+                        
+                <a href="#"><i class="fa-solid fa-cart-shopping fa-2xl" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight"></i></a>
+
+                <div class="offcanvas offcanvas-end" data-bs-scroll="true" data-bs-backdrop="true" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+
+                    <div class="offcanvas-header">
+
+                        <h5 class="offcanvas-title" id="offcanvasRightLabel"></h5>
+
+                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+
+                    </div>
+
+                    <!-- OFFCANVAS BODY (INSIDE CART) -->
+
+                    <div class="offcanvas-body">
+                                    
+                    <aside class="row">
+
+
+                        <div class="container-fluid">
+                    
+                            <h2>TOTAL: $ <span id="total"></span> </h2>
+                    
+                            <div class="cart-container"></div>
+                                        
+
+                            <h5 class="repeated"></h5>
+                            <button id="empty-cart" class="confirm-buttons">VACIAR CARRITO</button>
+                            <button id="confirm-buy" class="confirm-buttons">COMPRAR</button>
+
+                        </div>
+                
+                    </div>
+                                
+                    </aside>
+
+                    </div>
+
+            </div>
+    
+            <!-- PRODUCTS CONTAINER (BODY) -->
+            
+            <section class="productsContainer row d-flex my-5 mx-5">
+            </section>
+    
+    <script src="index.js" type="module"></script>
+    
+</body>
+</html>
